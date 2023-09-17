@@ -64,6 +64,7 @@ const YupValidation = () => {
 
     return (
         <div className="flex flex-col justify-center items-center">
+            <div className="text-lg font-bold my-2 text-center">Yup Validations</div>
             <form className='w-3/6' onSubmit={handleSubmit(onSubmit)} noValidate>
                 <label htmlFor="username" className='form-label'>Username: </label>
                 <input type="text" id="username" {...register('username')} />

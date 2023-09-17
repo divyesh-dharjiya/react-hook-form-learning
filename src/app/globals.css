@@ -18,4 +18,8 @@
   p {
     @apply text-red-600;
   }
+
+  a {
+    @apply p-3 bg-violet-500 text-white mx-3
+  }
 }

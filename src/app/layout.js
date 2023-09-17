@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -11,7 +12,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+      <div className='m-5 flex justify-center items-center'>
+        <Link href="/">Simple Form with All Data types</Link>
+        <Link href="/formArray">Form Array</Link>
+        <Link href="/yup">Yup Validations</Link>
+        <Link href="/zod">Zod Validations</Link>
+      </div>
+        {children}
+        </body>
     </html>
   )
 }
